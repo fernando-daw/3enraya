@@ -5,8 +5,9 @@ html {
 body {
     margin: 0;
 }
-
-
+hr {
+color: black;
+}
 
 section {
     display: flex;
@@ -18,12 +19,10 @@ section {
 article {
     text-align: center;
     flex: 1;
-    border-width: 1px;
     border-style: solid;
     padding: 1em;
-    margin-top: 2%;
-    margin-left: 2%;
     background-color: rgb(237, 231, 220) ;
+    margin: 1em;
 }
 
 article:nth-child(2) {
@@ -31,18 +30,22 @@ article:nth-child(2) {
 }
 
 #tablero {
-    border-style: solid;
-    border-color: red;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 2fr 10fr;
-    height: 75vh;
-    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 55vh;
+
+}
+table{
+    margin: auto;
 }
 
 #tablero div {
     border-style: solid;
-    margin: 10px;
     padding: 5px;
     text-align: center;
 }
+#espaciado{
+    margin-bottom: 3em;
+}
+tr:nth-child(even){background-color: rgb(213, 209, 209);}
